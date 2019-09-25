@@ -22,6 +22,8 @@ const handleUserInput  = (input) => {
       connection.write('Move: left');
     } else if (key === "\033[C") { // left
       connection.write('Move: right');
+    } else if (key.toLowerCase() === 'y') { // y key
+      connection.write('Say: Woohoo!');
     }
   });
 };

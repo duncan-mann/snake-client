@@ -10,7 +10,7 @@ const connect = function() {
   conn.on('connect', () => {
     conn.write('Name: DSM');
     console.log("Successfully connected to game server");
-    // conn.write('Move: up');
+
   });
   conn.setEncoding('utf8'); 
 
@@ -24,6 +24,4 @@ const connect = function() {
   return conn;
 }
 
-module.exports = {
-  connect
-};
+module.exports = {connect};
